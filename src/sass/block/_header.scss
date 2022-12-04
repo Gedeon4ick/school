@@ -1,5 +1,5 @@
 header {
-    height: 100vh;
+    height: 900px;
     position: relative;
     background: url('../../img/titul.png');
     background-repeat: no-repeat;
@@ -23,6 +23,7 @@ header {
                 font-size: 16px;
                 line-height: 20px;
                 color: #000000;
+                cursor: pointer;
             }
         }
 
@@ -43,6 +44,18 @@ header {
             font-size: 48px;
             line-height: 59px;
             color: #000000;
+            position: relative;
+
+            &::after {
+                content: 'KEMENGER MEKTEBI ';
+                position: absolute;
+                top: -26px;
+                left: -33px;
+                font-weight: 600;
+                font-size: 48px;
+                line-height: 59px;
+                color: rgba(1, 143, 163, 0.06);
+            }
 
             span {
                 color: #018FA3;
@@ -67,12 +80,17 @@ header {
             top: 586px;
             border: none;
             background: #FAE01A;
-            box-shadow: 0px 20px 40px -27px rgba(0, 0, 0, 0.15);
+
             border-radius: 30px;
             font-weight: 500;
             font-size: 20px;
             line-height: 24px;
             color: #000000;
+            cursor: pointer;
+
+            &:hover {
+                box-shadow: 0px 20px 40px -27px rgba(250, 224, 26, 1)
+            }
         }
     }
 }

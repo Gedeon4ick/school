@@ -1,0 +1,45 @@
+.about {
+    height: 900px;
+
+    .wrapper {
+        padding-top: 127px;
+        display: grid;
+        grid-template-columns: repeat(2, minmax(300px, 550px));
+        align-items: center;
+        justify-content: end;
+
+        .text {
+            width: 440px;
+            font-weight: 400;
+            font-size: 24px;
+            line-height: 29px;
+            color: #000000;
+            position: relative;
+
+            &::after {
+                content: url('../img/texttop.png');
+                position: absolute;
+                top: -68px;
+                left: -86px;
+                z-index: -1;
+            }
+        }
+    }
+
+    .wrapper2 {
+        margin-top: 115px;
+        display: grid;
+        grid-template-columns: repeat(2, minmax(300px, 550px));
+        justify-content: start;
+        align-items: center;
+        column-gap: 105px;
+
+        .text2 {
+            width: 440px;
+            font-weight: 400;
+            font-size: 24px;
+            line-height: 29px;
+            color: #000000;
+        }
+    }
+}
