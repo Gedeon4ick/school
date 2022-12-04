@@ -1,5 +1,5 @@
 {
-  "name": "eco",
+  "name": "school",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/elijahmylcev/eco"
+    "url": "https://github.com/Gedeon4ick/school"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/elijahmylcev/eco"
+    "url": "https://github.com/Gedeon4ick/school"
   },
-  "homepage": "https://github.com/elijahmylcev/eco",
+  "homepage": "https://github.com/Gedeon4ick/school",
   "devDependencies": {
     "browser-sync": "^2.27.10",
     "gulp": "^4.0.2",
