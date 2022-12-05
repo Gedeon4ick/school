@@ -5,7 +5,7 @@ header {
     background-repeat: no-repeat;
     background-position: 50%;
     background-size: cover;
-   
+
 
     nav {
         display: flex;
@@ -34,15 +34,16 @@ header {
                 align-items: center;
                 gap: 8px;
             }
-          
-            .humburger{
+
+            .humburger {
                 top: 20px;
                 right: 30px;
                 height: 21px;
                 display: none;
                 flex-direction: column;
                 justify-content: space-between;
-                align-items:flex-end;
+                align-items: flex-end;
+
                 span {
                     display: block;
                     width: 30px;
@@ -50,7 +51,7 @@ header {
                     background: rgb(0, 0, 0);
                 }
             }
-          
+
             .number {
                 font-weight: 600;
                 font-size: 18px;
@@ -86,6 +87,7 @@ header {
                 color: #018FA3;
             }
         }
+
         .subtitle {
             margin-top: 24px;
             max-width: 532px;
@@ -96,7 +98,7 @@ header {
 
         }
 
-       
+
 
         button {
             margin-top: 44px;
@@ -119,4 +121,34 @@ header {
             }
         }
     }
+}
+
+.mobile__menu {
+    width: 100%;
+    background-color: #fbfbfb;
+    overflow: hidden;
+    position: absolute;
+    height: 0;
+    transition: all .5s;
+    border-radius: 0px 0px 12px 12px;
+
+    &_links {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        gap: 24px;
+
+        li {
+            list-style-type: none;
+
+            a {
+                font-style: normal;
+                font-weight: 400;
+                line-height: 28px;
+                color: #464646;
+            }
+        }
+    }
+
+
 }
