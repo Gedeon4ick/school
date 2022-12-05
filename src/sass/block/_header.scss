@@ -8,7 +8,6 @@ header {
    
 
     nav {
-        padding: 20px 20px 0 20px;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -62,7 +61,6 @@ header {
     }
 
     .wrapper {
-        padding-left: 20px;
         margin-top: 156px;
         max-width: 668px;
 
@@ -88,8 +86,7 @@ header {
                 color: #018FA3;
             }
         }
-
-        .title__descr {
+        .subtitle {
             margin-top: 24px;
             max-width: 532px;
             font-weight: 400;
@@ -98,6 +95,8 @@ header {
             color: #000000;
 
         }
+
+       
 
         button {
             margin-top: 44px;
