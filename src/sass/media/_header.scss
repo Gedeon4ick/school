@@ -1,0 +1,23 @@
+@media (max-width: 1400px) {
+
+}
+
+@media (max-width: 863px) {
+    header{
+        nav{
+            ul{
+                display: none;
+            }
+            .phone {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 10px;
+                .humburger {
+                    display: flex;
+                }
+            }
+        }
+        
+    }
+}

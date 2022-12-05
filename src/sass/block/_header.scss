@@ -3,11 +3,12 @@ header {
     position: relative;
     background: url('../../img/titul.png');
     background-repeat: no-repeat;
-    background-position: 80%;
+    background-position: 50%;
     background-size: cover;
+   
 
-    menu {
-        padding-top: 20px;
+    nav {
+        padding: 20px 20px 0 20px;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -28,14 +29,40 @@ header {
         }
 
         .phone {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 8px;
+            &__block {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 8px;
+            }
+          
+            .humburger{
+                top: 20px;
+                right: 30px;
+                height: 21px;
+                display: none;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items:flex-end;
+                span {
+                    display: block;
+                    width: 30px;
+                    height: 3px;
+                    background: rgb(0, 0, 0);
+                }
+            }
+          
+            .number {
+                font-weight: 600;
+                font-size: 18px;
+                line-height: 22px;
+                color: #000000;
+            }
         }
     }
 
     .wrapper {
+        padding-left: 20px;
         margin-top: 156px;
         max-width: 668px;
 
