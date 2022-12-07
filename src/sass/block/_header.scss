@@ -10,7 +10,7 @@ header {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        z-index: 19;
+        z-index: 100;
 
         ul {
             display: flex;
@@ -38,18 +38,36 @@ header {
             .humburger {
                 top: 20px;
                 right: 30px;
-                height: 21px;
                 display: none;
                 flex-direction: column;
                 justify-content: space-between;
                 align-items: flex-end;
-
+                
                 span {
+                    margin-bottom: 5px;
                     display: block;
                     width: 30px;
                     height: 3px;
                     background: rgb(0, 0, 0);
+                    transition: 0.4s all ;
                 }
+                &-active {
+                    span {
+                      margin-bottom: -2px;
+          
+                      &:nth-child(1) {
+                        transform: rotate(-45deg);
+                      }
+          
+                      &:nth-child(2) {
+                        display: none;
+                      }
+          
+                      &:nth-child(3) {
+                        transform: rotate(45deg);
+                      }
+                    }
+                  }
             }
 
             .number {

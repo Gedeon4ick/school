@@ -1,6 +1,6 @@
 window.addEventListener('DOMContentLoaded', () => {
     const menu = document.querySelector('.mobile__menu');
-    const hamburger = document.querySelector('nav > .phone');
+    const humburger = document.querySelector('.humburger');
     const overlay = document.querySelector('.overlay');
     const menuLinks = document.querySelectorAll('nav > .link > li > a');
 
@@ -8,9 +8,9 @@ window.addEventListener('DOMContentLoaded', () => {
         document.querySelector('body').style.overflow = 'auto';
         menu.style.height = `0px`;
         menu.style.padding = '0';
-        hamburger.classList.toggle('nav.phone-hamburger-active');
-        if (hamburger.classList.contains('nav.phone-hamburger-active')) {
-            hamburger.classList.toggle('nav.phone-hamburger-active');
+        humburger.classList.toggle('humburger-active');
+        if (humburger.classList.contains('humburger-active')) {
+          humburger.classList.toggle('humburger-active');
         }
         overlay.classList.remove('overlay_active');
     }
@@ -18,7 +18,7 @@ window.addEventListener('DOMContentLoaded', () => {
     
   menuLinks.forEach(item => {
     item.addEventListener('click', () => {
-      if (hamburger.classList.contains('nav.phone-hamburger-active')) {
+      if (humburger.classList.contains('humburger-active')) {
         closeMenu();
       }
     });
@@ -31,11 +31,11 @@ window.addEventListener('DOMContentLoaded', () => {
   });
 
 
-  hamburger.addEventListener('click', () => {
-    hamburger.classList.toggle('nav.phone-hamburger-active');
+  humburger.addEventListener('click', () => {
+    humburger.classList.toggle('humburger-active');
     overlay.classList.toggle('overlay_active');
 
-    if (hamburger.classList.contains('nav.phone-hamburger-active')) {
+    if (humburger.classList.contains('humburger-active')) {
       document.querySelector('body').style.overflow = 'hidden';
       menu.style.paddingTop = '24px';
       menu.style.height = `${menu.scrollHeight + 48}px`;
