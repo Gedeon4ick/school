@@ -1,16 +1,16 @@
 header {
     height: 900px;
     position: relative;
-    background: url('../../img/titul.png');
+    background: url('../img/titul.png');
     background-repeat: no-repeat;
     background-position: 50%;
     background-size: cover;
-
 
     nav {
         display: flex;
         justify-content: space-between;
         align-items: center;
+        z-index: 19;
 
         ul {
             display: flex;
@@ -129,6 +129,7 @@ header {
     overflow: hidden;
     position: absolute;
     height: 0;
+    z-index: 11;
     transition: all .5s;
     border-radius: 0px 0px 12px 12px;
 

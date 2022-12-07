@@ -1,6 +1,7 @@
 @media (max-width: 863px) {
     header {
         nav {
+            position: sticky;
             ul {
                 display: none;
             }
