@@ -46,4 +46,24 @@ window.addEventListener('DOMContentLoaded', () => {
     // menu.classList.toggle('mobile__menu-active');
   });
 
+  // модальное окно
+  const modalTrigger = document.querySelector('[data-open]');
+  const overlayModal = document.querySelector('.overlayModal');
+
+  modalTrigger.addEventListener('click', () => {
+    overlayModal.classList.add('overlayModal_active');
+    document.body.style.overflow = 'hidden';
+  });
+
+  function closeModal() {
+    overlayModal.classList.remove('overlayModal_active');
+  }
+  
+  overlayModal.addEventListener('click', (e) => {
+    if (e.target === overlayModal) {
+      closeModal();
+    }
+  });
+
+
 });

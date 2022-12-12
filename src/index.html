@@ -54,11 +54,40 @@
                 интеллектуального развития</div>
             <div class="subtitle">Обучение происходит на казахском и русском языках. При записи на два или более
                 курсов предусмотрена скидка. Запишитесь на бесплатный пробный урок.</div>
-            <button>Оставить заявку</button>
+            <button data-open >Оставить заявку</button>
         </div>
+        
     </div>
 </header>
 <div class="overlay"></div>
+<div class="overlayModal">
+    <div class="modal" id="first">
+        <div class="modal__title">
+            Заполните <span>форму</span> и мы обязательно свяжемся с Вами.
+        </div>
+        <form class="form">
+            <div class="form-input">
+                <input required id="name" type="text" placeholder="Ваше имя...">
+            </div>
+            <div class="form-input">
+                <input required name="phone" id="phone" type="phone" placeholder="Ваш телефон...">
+            </div>
+            <div class="form-input">
+                <textarea name="text" id="text" placeholder="Ваш комментарий..."></textarea>
+            </div>
+            <button type="submit">Оставить заявку</button>
+        </form>
+    </div>
+
+    <div class="modal hide">
+        <div class="modal__title">
+            Спасибо за заявку
+        </div>
+        <div class="modal__subtitle">
+            В ближайшее время мы свяжемся с Вами
+        </div>
+    </div>
+</div>
 <!-- 
 <section class="about">
     <div class="container">

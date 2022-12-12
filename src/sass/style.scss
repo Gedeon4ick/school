@@ -11,13 +11,35 @@
     // padding: 0 15px;
 }
 
+.hide {
+    display: none;
+}
 
 .overlay {
     display: none;
 }
 
 .overlay_active {
-    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, .7);
+}
+
+.overlayModal {
+    display: none;
+}
+
+.overlayModal_active {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     z-index: 10;
     top: 0;
     left: 0;
@@ -28,8 +50,10 @@
 }
 
 
+
 @import 'block/header';
 @import 'block/about';
+@import 'block/form';
 
 
 @import 'media/media';
