@@ -1,21 +1,21 @@
 window.addEventListener('DOMContentLoaded', () => {
-    const menu = document.querySelector('.mobile__menu');
-    const humburger = document.querySelector('.humburger');
-    const overlay = document.querySelector('.overlay');
-    const menuLinks = document.querySelectorAll('nav > .link > li > a');
+  const menu = document.querySelector('.mobile__menu');
+  const humburger = document.querySelector('.humburger');
+  const overlay = document.querySelector('.overlay');
+  const menuLinks = document.querySelectorAll('nav > .link > li > a');
 
-    function closeMenu() {
-        document.querySelector('body').style.overflow = 'auto';
-        menu.style.height = `0px`;
-        menu.style.padding = '0';
-        humburger.classList.toggle('humburger-active');
-        if (humburger.classList.contains('humburger-active')) {
-          humburger.classList.toggle('humburger-active');
-        }
-        overlay.classList.remove('overlay_active');
+  function closeMenu() {
+    document.querySelector('body').style.overflow = 'auto';
+    menu.style.height = `0px`;
+    menu.style.padding = '0';
+    humburger.classList.toggle('humburger-active');
+    if (humburger.classList.contains('humburger-active')) {
+      humburger.classList.toggle('humburger-active');
     }
+    overlay.classList.remove('overlay_active');
+  }
 
-    
+
   menuLinks.forEach(item => {
     item.addEventListener('click', () => {
       if (humburger.classList.contains('humburger-active')) {
@@ -49,21 +49,38 @@ window.addEventListener('DOMContentLoaded', () => {
   // модальное окно
   const modalTrigger = document.querySelector('[data-open]');
   const overlayModal = document.querySelector('.overlayModal');
+  const btnSubmit = document.querySelector('[data-close]');
+  const modalFirst = document.querySelector('#first');
+  const modalSecond = document.querySelector('#second');
 
   modalTrigger.addEventListener('click', () => {
     overlayModal.classList.add('overlayModal_active');
+    modalFirst.classList.remove('hide');
     document.body.style.overflow = 'hidden';
   });
 
   function closeModal() {
     overlayModal.classList.remove('overlayModal_active');
+    document.body.style.overflow = '';
+
   }
-  
+
   overlayModal.addEventListener('click', (e) => {
     if (e.target === overlayModal) {
       closeModal();
+      modalSecond.classList.remove("show");
     }
   });
+
+  btnSubmit.addEventListener('click', (e) => {
+    e.preventDefault();
+    modalFirst.classList.add('hide');
+    modalSecond.classList.add("show");
+  });
+
+  function validate() {
+    
+  }
 
 
 });
