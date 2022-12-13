@@ -8,7 +8,6 @@
 .container {
     max-width: 1300px;
     margin: 0 auto;
-    // padding: 0 15px;
 }
 
 .hide {
@@ -25,15 +24,15 @@
 }
 
 .overlay_active {
+    position: fixed;
     width: 100vw;
     height: 100vh;
     top: 0;
     left: 0;    
-    z-index: 10;
+    z-index: 5;
     visibility: visible;
     transition: visible 0.5, background 0.5s ease-in;
     background: rgba(0, 0, 0, 0.7);
-
 }
 
 .overlayModal {
@@ -44,7 +43,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: 10;
+    z-index: 12;
     top: 0;
     left: 0;
     position: fixed;
@@ -58,6 +57,7 @@
 @import 'block/header';
 @import 'block/about';
 @import 'block/form';
+@import 'block/titul';
 
 
 @import 'media/media';

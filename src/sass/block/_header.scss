@@ -1,22 +1,29 @@
 header {
-        position: sticky;
-        z-index: 11;
+    position: relative;
+    z-index: 11;
+
     nav {
+        padding: 0 15px 0 15px;
+        // background-color: #fff;
+        width: 100%;
         display: flex;
         justify-content: space-between;
         align-items: center;
+
         ul {
             display: flex;
             justify-content: space-between;
             gap: 40px;
-
             li {
                 list-style-type: none;
+               a {
                 font-weight: 500;
                 font-size: 16px;
                 line-height: 20px;
                 color: #000000;
+                text-decoration: none;
                 cursor: pointer;
+               }
             }
         }
 
@@ -35,32 +42,33 @@ header {
                 flex-direction: column;
                 justify-content: space-between;
                 align-items: flex-end;
-                
+
                 span {
                     margin-bottom: 5px;
                     display: block;
                     width: 30px;
                     height: 3px;
                     background: rgb(0, 0, 0);
-                    transition: 0.4s all ;
+                    transition: 0.4s all;
                 }
+
                 &-active {
                     span {
-                      margin-bottom: -2px;
-          
-                      &:nth-child(1) {
-                        transform: rotate(-45deg);
-                      }
-          
-                      &:nth-child(2) {
-                        display: none;
-                      }
-          
-                      &:nth-child(3) {
-                        transform: rotate(45deg);
-                      }
+                        margin-bottom: -2px;
+
+                        &:nth-child(1) {
+                            transform: rotate(-45deg);
+                        }
+
+                        &:nth-child(2) {
+                            display: none;
+                        }
+
+                        &:nth-child(3) {
+                            transform: rotate(45deg);
+                        }
                     }
-                  }
+                }
             }
 
             .number {
@@ -72,12 +80,12 @@ header {
         }
     }
 
-    
+
 }
 
 
 .mobile__menu {
-    padding: 0 20px ;
+    padding: 0 20px;
     width: 100%;
     background-color: #fff;
     overflow: hidden;
@@ -97,10 +105,12 @@ header {
             list-style-type: none;
 
             a {
-                font-style: normal;
                 font-weight: 400;
-                line-height: 28px;
-                color: #464646;
+                font-size: 16px;
+                line-height: 20px;
+                color: #000000;
+                text-decoration: none;
+                cursor: pointer;
             }
         }
     }

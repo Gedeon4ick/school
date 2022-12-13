@@ -1,12 +1,16 @@
 .titul {
-    position: relative;
+    // position: relative; 
+    margin-top: -91px; 
+    padding-top: 240px;
+    padding-left: 15px;
+    padding-right: 15px;
+    height: 900px;
     background: url('../img/titul.png');
     background-repeat: no-repeat;
     background-position: 50%;
     background-size: cover;
 
     .wrapper {
-        margin-top: 156px;
         max-width: 668px;
 
         .title {
