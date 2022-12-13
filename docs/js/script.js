@@ -52,6 +52,11 @@ window.addEventListener('DOMContentLoaded', () => {
   const btnSubmit = document.querySelector('[data-close]');
   const modalFirst = document.querySelector('#first');
   const modalSecond = document.querySelector('#second');
+  const input = document.querySelectorAll('input');
+  const textarea = document.querySelector('textarea');
+  const inputName = document.querySelector('[name=name]');
+  const inputPhone = document.querySelector('[name="phone]');
+
 
   modalTrigger.addEventListener('click', () => {
     overlayModal.classList.add('overlayModal_active');
@@ -76,11 +81,20 @@ window.addEventListener('DOMContentLoaded', () => {
     e.preventDefault();
     modalFirst.classList.add('hide');
     modalSecond.classList.add("show");
+    textarea.value = '';
+    input.forEach((elemet) => {
+      elemet.value = "";
+    });
   });
 
-  function validate() {
-    
-  }
+
+
+  inputName.addEventListener('input', function () {
+    this.value = this.value.replace(/[^А-Яа-яЁёA-Za-z]/g, '');
+  });
+
+  // inputPhone.addEventListener('')
+
 
 
 });
