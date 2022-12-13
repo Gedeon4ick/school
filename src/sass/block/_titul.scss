@@ -43,10 +43,7 @@
             font-size: 24px;
             line-height: 29px;
             color: #000000;
-
         }
-
-
 
         button {
             margin-top: 44px;
@@ -56,7 +53,6 @@
             top: 586px;
             border: none;
             background: #FAE01A;
-
             border-radius: 30px;
             font-weight: 500;
             font-size: 20px;
@@ -65,7 +61,7 @@
             cursor: pointer;
 
             &:hover {
-                box-shadow: 0px 20px 40px -27px rgba(250, 224, 26, 1)
+                box-shadow: 2px 2px 10px  rgba(250, 224, 26, 1)
             }
         }
     }
