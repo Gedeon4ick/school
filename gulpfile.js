@@ -99,10 +99,10 @@ gulp.task('sourcesBootsCss', function () {
         .pipe(browserSync.stream())
 })
 
-gulp.task('sourcesBootsJS', function () {
-    return gulp.src('./node_modules/bootstrap/dist/js/bootstrap.min.js')
-        .pipe(gulp.dest("docs/js"))
-        .pipe(browserSync.stream())
-})
+// gulp.task('sourcesBootsJS', function () {
+//     return gulp.src('./node_modules/bootstrap/dist/js/bootstrap.min.js')
+//         .pipe(gulp.dest("docs/js"))
+//         .pipe(browserSync.stream())
+// })
 
-gulp.task('default', gulp.parallel('watch', 'server', 'styles', 'scripts', 'fonts', 'icons', 'html', 'images', 'gif', 'sourcesBootsCss', 'sourcesBootsJS', 'video'));
+gulp.task('default', gulp.parallel('watch', 'server', 'styles', 'scripts', 'fonts', 'icons', 'html', 'images', 'gif', 'video'));

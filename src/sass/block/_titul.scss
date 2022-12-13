@@ -1,0 +1,68 @@
+.titul {
+    position: relative;
+    background: url('../img/titul.png');
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: cover;
+
+    .wrapper {
+        margin-top: 156px;
+        max-width: 668px;
+
+        .title {
+            font-weight: 600;
+            font-size: 48px;
+            line-height: 59px;
+            color: #000000;
+            position: relative;
+
+            &::after {
+                content: 'KEMENGER MEKTEBI ';
+                position: absolute;
+                top: -26px;
+                left: -33px;
+                font-weight: 600;
+                font-size: 48px;
+                line-height: 59px;
+                color: rgba(1, 143, 163, 0.06);
+            }
+
+            span {
+                color: #018FA3;
+            }
+        }
+
+        .subtitle {
+            margin-top: 24px;
+            max-width: 532px;
+            font-weight: 400;
+            font-size: 24px;
+            line-height: 29px;
+            color: #000000;
+
+        }
+
+
+
+        button {
+            margin-top: 44px;
+            width: 244px;
+            height: 64px;
+            left: 119px;
+            top: 586px;
+            border: none;
+            background: #FAE01A;
+
+            border-radius: 30px;
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 24px;
+            color: #000000;
+            cursor: pointer;
+
+            &:hover {
+                box-shadow: 0px 20px 40px -27px rgba(250, 224, 26, 1)
+            }
+        }
+    }
+}
