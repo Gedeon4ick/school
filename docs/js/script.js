@@ -85,7 +85,7 @@ window.addEventListener('DOMContentLoaded', () => {
 	// Кнопка подробнее на слайдорах
 	// const triggerCard = document
 	const triggers = document.querySelectorAll('.wrapper__slider_item-body > a');
-	
+
 
 	triggers.forEach(trigger => {
 		trigger.addEventListener('click', (e) => {
@@ -110,11 +110,35 @@ window.addEventListener('DOMContentLoaded', () => {
 
 	$('.wrapper__slider').slick({
 		arrows: true,
-		infinite: true,
 		slidesToShow: 3,
 		slidesToScroll: 3,
-		// autoplay: true,
-		// autoplaySpeed: 2000,
+		autoplay: true,
+		autoplaySpeed: 2000,
+		responsive: [{
+				breakpoint: 1400,
+				settings: {
+					arrows: false,
+				}
+			},
+			{
+				breakpoint: 1200,
+				settings: {
+					arrows: false,
+					slidesToShow: 2,
+					slidesToScroll: 2,
+					
+				}
+			},
+			{
+				breakpoint: 770,
+				settings: {
+					arrows: false,
+					slidesToShow: 1,
+					slidesToScroll: 1,
+				}
+			},
+		],
+
 	});
 
 
