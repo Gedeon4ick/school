@@ -82,6 +82,20 @@ window.addEventListener('DOMContentLoaded', () => {
 		this.value = this.value.replace(/[^А-Яа-яЁёA-Za-z]/g, '');
 	});
 
+	// Кнопка подробнее на слайдорах
+	// const triggerCard = document
+	const triggers = document.querySelectorAll('.wrapper__slider_item-body > a');
+	
+
+	triggers.forEach(trigger => {
+		trigger.addEventListener('click', (e) => {
+			if (e.target.previousElementSibling.style.height == '170px') {
+				e.target.previousElementSibling.style.height = `${e.target.previousElementSibling.scrollHeight + 20}px`;
+			} else {
+				e.target.previousElementSibling.style.height = '170px'
+			}
+		});
+	});
 
 	$('.slider__mini').slick({
 		arrows: false,
@@ -91,7 +105,17 @@ window.addEventListener('DOMContentLoaded', () => {
 		autoplay: true,
 		autoplaySpeed: 2000,
 		dots: true
-	  });
-			  
+	});
+
+
+	$('.wrapper__slider').slick({
+		arrows: true,
+		infinite: true,
+		slidesToShow: 3,
+		slidesToScroll: 3,
+		// autoplay: true,
+		// autoplaySpeed: 2000,
+	});
+
 
 });

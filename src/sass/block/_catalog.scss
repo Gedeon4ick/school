@@ -1,10 +1,50 @@
+.show {
+    display: block;
+}
+
 .catalog {
     background-color: #F6FAFF;
     padding-top: 68px;
+    padding-bottom: 50px;
 
     .wrapper {
+        &__title {
+            font-weight: 600;
+            font-size: 48px;
+            line-height: 59px;
+            color: #000000;
+            text-align: center;
+        }
+
         &__slider {
+            margin-top: 68px;
+            position: relative;
+            .slick-next {
+                font-size: 0px;
+                width: 40px;
+                height: 70px;
+                position: absolute;
+                top: 350px;
+                right: -3%;
+                background-color: #fff;
+                border: none;
+                background: url('../img/VectorRight.png')no-repeat ;
+            }
+            .slick-prev {
+                font-size: 0px;
+                width: 40px;
+                height: 70px;
+                position: absolute;
+                left: -3%;
+                top: 350px;
+                background-color: #fff;
+                border: none;
+                background: url('../img/VectorLeft.png')no-repeat ;
+            }
+            
             &_item {
+                padding-left: 15px;
+                padding-right: 15px;
                 &-title {
                     display: flex;
                     justify-content: center;
@@ -24,18 +64,22 @@
                         background-color: #4ECA30;
                         @include size;
                     }
+
                     &.darkGreen {
                         background-color: #018FA3;
                         @include size;
                     }
+
                     &.yellow {
                         background-color: #FFE41B;
                         @include size;
                     }
+
                     &.pink {
                         background-color: #FF4D94;
                         @include size;
-                    } 
+                    }
+
                     &.orange {
                         background-color: #FFA724;
                         @include size;
@@ -45,6 +89,7 @@
                 &-body {
                     padding: 60px 32px;
                     max-width: 387px;
+                    // min-height: 600px;
                     background: #FFFFFF;
                     box-shadow: 0px 52px 34px -27px rgba(225, 225, 225, 0.15);
                     border-radius: 0 0 30px 30px;
@@ -69,17 +114,22 @@
 
                     &-list {
                         margin-top: 60px;
+                        overflow: hidden;
+                        height: 170px;
+                        transition: all 0.5s;
                         display: flex;
                         flex-direction: column;
                         list-style-type: none;
 
                         li {
-                            display: flex;
+                            display:  flex;
                             align-items: center;
                             margin: 0 auto;
-                            height: 53px;
+                            // height: 53px;
+                            padding: 10px;
                             border-bottom: 2px dashed #F0F0F0;
                             text-align: center;
+                           
 
                             &:last-child {
                                 border-bottom: none;
@@ -89,6 +139,7 @@
 
                     &-trigger {
                         text-align: center;
+                        display: block;
                         font-weight: 400;
                         font-size: 24px;
                         line-height: 29px;
@@ -115,18 +166,23 @@
                         &.purple {
                             background-color: #955EEA;
                         }
+
                         &.green {
                             background-color: #4ECA30;
                         }
+
                         &.darkGreen {
                             background-color: #018FA3;
                         }
+
                         &.yellow {
                             background-color: #FFE41B;
                         }
+
                         &.pink {
                             background-color: #FF4D94;
-                        } 
+                        }
+
                         &.orange {
                             background-color: #FFA724;
                         }
