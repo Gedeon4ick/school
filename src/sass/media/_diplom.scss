@@ -1,12 +1,17 @@
 @media (max-width: 591px) {
     .diplom {
-        .diplom__tabl {
-          img {
-            display: none;
-          }
+
+        .wrapper {
+            .diplom__tabl {
+                img {
+                    display: none;
+                }
+            }
+
+            .block {
+                display: block;
+            }
         }
-        .slider {
-            display: block;
-        }
+
     }
 }
