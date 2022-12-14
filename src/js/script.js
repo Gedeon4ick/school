@@ -117,6 +117,37 @@ window.addEventListener('DOMContentLoaded', () => {
 		dots: true
 	});
 
+	$('.reviewsSlider').slick({
+		slidesToShow: 3,
+		slidesToScroll: 1,
+		autoplay: true,
+		autoplaySpeed: 2000,
+		responsive: [{
+			breakpoint: 1400,
+			settings: {
+				arrows: false,
+			}
+		},
+		{
+			breakpoint: 1200,
+			settings: {
+				arrows: false,
+				slidesToShow: 2,
+				slidesToScroll: 2,
+				
+			}
+		},
+		{
+			breakpoint: 770,
+			settings: {
+				arrows: false,
+				slidesToShow: 1,
+				slidesToScroll: 1,
+			}
+		},
+	],
+	});
+
 
 
 	$('.wrapper__slider').slick({
