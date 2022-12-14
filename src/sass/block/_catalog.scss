@@ -28,6 +28,12 @@
                         height: 80px;
                         border-radius: 30px 30px 0px 0px;
                     }
+                    &.darkGreen {
+                        background-color: #018FA3;
+                        max-width: 387px;
+                        height: 80px;
+                        border-radius: 30px 30px 0px 0px;
+                    }
                 }
 
                 &-body {
@@ -81,6 +87,7 @@
                         font-size: 24px;
                         line-height: 29px;
                         color: #018FA3;
+                        cursor: pointer;
                     }
 
                     &-btn {
@@ -97,9 +104,17 @@
                         line-height: 29px;
                         text-transform: capitalize;
                         color: #FFFFFF;
+                        cursor: pointer;
 
                         &.purple {
                             background-color: #955EEA;
+                        }
+                        &.green {
+                            background-color: #4ECA30;
+                        }
+
+                        &.darkGreen {
+                            background-color: #018FA3;
                         }
                     }
                 }
