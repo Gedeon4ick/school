@@ -36,7 +36,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
 
 	// модальное окно
-	const modalTrigger = document.querySelector('[data-open]');
+	const modalTrigger = document.querySelectorAll('[data-open]');
 	const overlayModal = document.querySelector('.overlayModal');
 	const btnSubmit = document.querySelector('[data-close]');
 	const modalFirst = document.querySelector('#first');
@@ -47,15 +47,15 @@ window.addEventListener('DOMContentLoaded', () => {
 	const inputPhone = document.querySelector('[name="phone]');
 
 
-	// modalTrigger.forEach(item  => {
-		
-	// });
-
-	modalTrigger.addEventListener('click', () => {
-		overlayModal.classList.add('overlayModal_active');
-		modalFirst.classList.remove('hide');
-		document.body.style.overflow = 'hidden';
+	modalTrigger.forEach(item  => {
+		item.addEventListener('click', () => {
+			overlayModal.classList.add('overlayModal_active');
+			modalFirst.classList.remove('hide');
+			document.body.style.overflow = 'hidden';
+		});
 	});
+
+	
 
 	function closeModal() {
 		overlayModal.classList.remove('overlayModal_active');
