@@ -1,0 +1,56 @@
+.diplom {
+    background: url('../img/bgDiplom.png')no-repeat;
+    padding: 100px 0 120px 0;
+    height: 600px;
+
+    .wrapper {
+        .diplom__tabl {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        .title {
+            font-weight: 600;
+            font-size: 48px;
+            line-height: 59px;
+            color: #000000;
+            text-align: center;
+        }
+        .sliderDiplom {
+            .slidElem{
+                margin-top: 20px;
+                width: 100%;
+              img {
+                display: block;
+                margin: 0 auto;
+              }
+            }
+            .slick-dots {
+                margin-top: 20px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 10px;
+                list-style-type: none;
+
+                li>button {
+                    transition: 0.5s all;
+                    box-sizing: border-box;
+                    width: 20px;
+                    height: 20px;
+                    border-radius: 50%;
+                    border: none;
+                    font-size: 0;
+                }
+
+                li.slick-active {
+                    button {
+                        background: #FAE01A;
+                    }
+                }
+            }
+        }
+ 
+    }
+}

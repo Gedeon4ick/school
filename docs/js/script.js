@@ -107,6 +107,17 @@ window.addEventListener('DOMContentLoaded', () => {
 		dots: true
 	});
 
+	
+	$('.sliderDiplom').slick({
+		arrows: false,
+		slidesToShow: 1,
+		slidesToScroll: 1,
+		autoplay: true,
+		autoplaySpeed: 2000,
+		dots: true
+	});
+
+
 
 	$('.wrapper__slider').slick({
 		arrows: true,
