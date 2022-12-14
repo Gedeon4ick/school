@@ -47,6 +47,10 @@ window.addEventListener('DOMContentLoaded', () => {
 	const inputPhone = document.querySelector('[name="phone]');
 
 
+	// modalTrigger.forEach(item  => {
+		
+	// });
+
 	modalTrigger.addEventListener('click', () => {
 		overlayModal.classList.add('overlayModal_active');
 		modalFirst.classList.remove('hide');
