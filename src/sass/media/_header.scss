@@ -1,7 +1,9 @@
 @media (max-width: 863px) {
     header {
+        position: sticky;
+        top: 0;
         nav {
-            background-color: #fff;
+            background-color: #fbfbfb;
             ul {
                 display: none;
             }

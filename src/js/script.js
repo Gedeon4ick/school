@@ -32,7 +32,7 @@ window.addEventListener('DOMContentLoaded', () => {
 		item.addEventListener('click', () => {
 			closeMenu();
 		});
-	}) ;
+	});
 
 
 	// модальное окно
@@ -82,8 +82,16 @@ window.addEventListener('DOMContentLoaded', () => {
 		this.value = this.value.replace(/[^А-Яа-яЁёA-Za-z]/g, '');
 	});
 
-	// inputPhone.addEventListener('')
 
-
+	$('.slider__mini').slick({
+		arrows: false,
+		infinite: true,
+		slidesToShow: 3,
+		slidesToScroll: 3,
+		autoplay: true,
+		autoplaySpeed: 2000,
+		dots: true
+	  });
+			  
 
 });

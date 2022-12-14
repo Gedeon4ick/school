@@ -1,0 +1,24 @@
+
+@media (max-width: 1170px) {
+    .directions{
+        img {
+            width: 100%;
+        }
+    }
+   
+}
+
+@media (max-width: 705px) {
+    .directions{
+        padding-top: 45px;
+        .titulImg {
+            img {
+             display: none; 
+            }
+         }
+         .wrapper {
+             display: block;
+         }
+    }
+   
+}
