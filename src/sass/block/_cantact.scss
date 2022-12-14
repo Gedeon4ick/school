@@ -1,6 +1,7 @@
 .contact {
     padding: 205px 0 90px 0;
     background: url('../img/bgContact.png') no-repeat;
+
     &__wrapper {
         padding: 12px 42px 38px 42px;
         width: 590px;
@@ -8,6 +9,7 @@
         background: #018FA3;
         box-shadow: 0px 50px 50px -27px rgba(0, 0, 0, 0.1);
         border-radius: 30px;
+
         &_title {
             text-align: center;
             font-weight: 500;
@@ -16,6 +18,7 @@
             color: #FFFFFF;
 
         }
+
         &_subtitle {
             margin-top: 20px;
             font-weight: 400;
@@ -23,6 +26,20 @@
             line-height: 29px;
 
             color: #FFFFFF;
+        }
+    }
+
+    &__map {
+        display: block;
+        margin: 0 auto;
+        margin-top: 57px;
+        max-width: 794px;
+        min-height: 539px;
+        background: url(карта.jpg);
+        border: 20px solid #000000;
+        border-radius: 20px;
+        iframe {
+            width: 100%;
         }
     }
 }
