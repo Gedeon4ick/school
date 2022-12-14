@@ -1,0 +1,37 @@
+@media (max-width: 863px) {
+    .foother {
+        nav {
+            ul {
+                display: none;
+            }
+        }
+    }
+}
+
+
+
+
+@media (max-width: 375px) {
+    .foother {
+        .wrapper {
+            .title {
+                font-size: 21px;
+
+            }
+        }
+
+        nav {
+            .phone {
+                &__block {
+                    .icons {
+                        width: 30px;
+                    }
+
+                    .number {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}
