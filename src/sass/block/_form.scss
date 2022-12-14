@@ -6,30 +6,46 @@
     background: #F6FAFF;
     border-radius: 30px;
 
+    img {
+        display: block;
+        margin: 0 auto;
+    }
+
     &__title {
         margin: 0 auto;
-        width: 205px;
+        margin-top: 16px;
+        width: 314px;
         font-weight: 500;
-        font-size: 24px;
-        line-height: 29px;
+        font-size: 36px;
+        line-height: 44px;
         text-align: center;
         color: #000000;
+        span {
+            color: #018FA3;
+            font-weight: 500;
+            font-size: 36px;
+        }
     }
 
     &__subtitle {
-        margin: 0 auto;
-        width: 205px;
+        margin-top: 34px;
         font-weight: 500;
-        font-size: 24px;
-        line-height: 29px;
+        font-size: 36px;
+        line-height: 44px;
         text-align: center;
         color: #000000;
+
+        span {
+            color: #018FA3;
+            font-weight: 500;
+            font-size: 36px;
+        }
     }
 
     .form {
         .form-input {
             margin-top: 10px;
-            
+
             input {
                 padding: 20px;
                 width: 100%;
