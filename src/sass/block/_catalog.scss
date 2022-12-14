@@ -1,0 +1,88 @@
+.catalog {
+    background-color: #F6FAFF;
+    padding-top: 68px;
+
+    .wrapper {
+        &__slider {
+            &_item {
+                &-title {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    font-weight: 700;
+                    font-size: 24px;
+                    line-height: 29px;
+                    text-transform: uppercase;
+                    color: #FFFFFF;
+
+                    &.purple {
+                        background-color: #955EEA;
+                        max-width: 387px;
+                        height: 80px;
+                        border-radius: 30px 30px 0px 0px;
+                    }
+
+                    &.green {
+                        background-color: #4ECA30;
+                        max-width: 387px;
+                        height: 80px;
+                        border-radius: 30px 30px 0px 0px;
+                    }
+                }
+
+                &-body {
+                    padding: 60px 32px;
+                    max-width: 387px;
+                    background: #FFFFFF;
+                    box-shadow: 0px 52px 34px -27px rgba(225, 225, 225, 0.15);
+                    border-radius: 0 0 30px 30px;
+
+                    &-price {
+                        text-align: center;
+                        font-weight: 600;
+                        font-size: 48px;
+                        line-height: 59px;
+                        text-transform: uppercase;
+                        color: #000000;
+                    }
+
+                    &-descr {
+                        margin-top: 24px;
+                        font-weight: 400;
+                        font-size: 24px;
+                        line-height: 29px;
+                        color: #000000;
+                        text-align: center;
+                    }
+
+                    &-list {
+                        margin-top: 60px;
+                        display: flex;
+                        flex-direction: column;
+                        list-style-type: none;
+
+                        li {
+                            display: flex;
+                            align-items: center;
+                            margin: 0 auto;
+                            height: 53px;
+                            border-bottom: 2px dashed #F0F0F0;
+                            text-align: center;
+
+                            &:last-child {
+                                border-bottom: none;
+                            }
+                        }
+                    }
+
+                    &-trigger {
+                        font-weight: 400;
+                        font-size: 24px;
+                        line-height: 29px;
+                        color: #018FA3;
+                    }
+                }
+            }
+        }
+    }
+}
